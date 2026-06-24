@@ -9,5 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: greeting
+      - name: get code
         run: echo "hello world"
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: viki
+          path: |
+            dist
+            
+        
+
+  
