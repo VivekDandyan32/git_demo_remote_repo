@@ -10,12 +10,13 @@ jobs:
 
     steps:
       - name: get code
-        run: echo "hello world"
+        uses: actions/checkout@v7.0.0
+
+      - name: upload artifacts  
         uses: actions/upload-artifact@v7.0.1
         with:
-          name: viki
-          path: |
-            dist
+          name: static web page
+          path: index.html
             
         
 
